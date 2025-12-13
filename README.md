@@ -31,12 +31,11 @@ The training will:
 
 Generate images from a trained model:
 ```bash
-
+python generate.py
 ```
 
-Arguments:
-- First argument: Path to checkpoint file
-- Second argument (optional): Number of images to generate (default: 16)
+Argument (optional):
+- Number of images to generate (default: 16)
 
 ## Model Architecture
 
@@ -74,8 +73,8 @@ Edit `train.py` to customize:
 - The code will automatically fall back to CPU if no GPU is available
 
 **Out of memory:**
-- Reduce `BATCH_SIZE` in `config.py`
-- Reduce `LATENT_DIM` in `config.py`
+- Reduce `BATCH_SIZE` in `train.py`
+- Reduce `LATENT_DIM` in `train.py`
 
 **Poor quality images:**
 - Train for more epochs
