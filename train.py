@@ -10,7 +10,7 @@ import os
 # Hyperparameters
 BATCH_SIZE = 64
 LATENT_DIM = 100
-EPOCHS = 15
+EPOCHS = 20
 LR = 0.0005
 
 device = "cuda" if torch.cuda.is_available() else "cpu"

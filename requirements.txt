@@ -1,3 +1,4 @@
+# Install with: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu12x - depending on your CUDA version
 torch
 torchvision
 matplotlib
