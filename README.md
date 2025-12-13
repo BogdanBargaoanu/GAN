@@ -4,10 +4,9 @@ A Generative Adversarial Network (GAN) implementation using PyTorch to generate 
 
 ## Setup
 
-1. **Clone or create the project directory:**
+1. **Clone the repository:**
    ```bash
-   mkdir mnist-gan
-   cd mnist-gan
+   git clone https://github.com/BogdanBargaoanu/GAN.git
    ```
 
 2. **Install dependencies:**
