@@ -208,3 +208,4 @@ __marimo__/
 discriminator_final.pth
 /generated_images
 generator_final.pth
+/data
