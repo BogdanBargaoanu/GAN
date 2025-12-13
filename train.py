@@ -122,11 +122,11 @@ for epoch in range(EPOCHS):
         seconds = int(estimated_remaining % 60)
 
         if hours > 0:
-            print(f"⏰ Estimated time remaining: {hours}h {minutes}m {seconds}s")
+            print(f"Estimated time remaining: {hours}h {minutes}m {seconds}s")
         elif minutes > 0:
-            print(f"⏰ Estimated time remaining: {minutes}m {seconds}s")
+            print(f"Estimated time remaining: {minutes}m {seconds}s")
         else:
-            print(f"⏰ Estimated time remaining: {seconds}s")
+            print(f"Estimated time remaining: {seconds}s")
 
 print("\n" + "=" * 50)
 print("Training completed!")
