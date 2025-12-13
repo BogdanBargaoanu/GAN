@@ -1,6 +1,6 @@
 # MNIST GAN - Handwritten Digit Generation
 
-A Generative Adversarial Network (GAN) implementation using PyTorch Lightning to generate handwritten digits similar to the MNIST dataset.
+A Generative Adversarial Network (GAN) implementation using PyTorch to generate handwritten digits similar to the MNIST dataset.
 
 ## Setup
 
