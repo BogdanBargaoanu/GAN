@@ -209,3 +209,5 @@ discriminator_final.pth
 /generated_images
 generator_final.pth
 /data
+/checkpoints
+training_history.json
