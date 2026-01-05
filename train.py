@@ -12,8 +12,9 @@ import os
 # Hyperparameters
 BATCH_SIZE = 64
 LATENT_DIM = 100
-EPOCHS = 20
-LR = 0.0003
+EPOCHS = 40
+LR_G = 0.0002   # Generator learning rate
+LR_D = 0.0004   # Discriminator learning rate
 SAVE_INTERVAL = 5  # Save checkpoints every N epochs
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -38,8 +39,8 @@ D = Discriminator().to(device)
 
 # Loss & Optimizers
 criterion = nn.BCELoss()
-opt_G = torch.optim.Adam(G.parameters(), lr=LR, betas=(0.5, 0.999))
-opt_D = torch.optim.Adam(D.parameters(), lr=LR, betas=(0.5, 0.999))
+opt_G = torch.optim.Adam(G.parameters(), lr=LR_G, betas=(0.5, 0.999))
+opt_D = torch.optim.Adam(D.parameters(), lr=LR_D, betas=(0.5, 0.999))
 
 # Training statistics
 total_batches = len(dataloader)
