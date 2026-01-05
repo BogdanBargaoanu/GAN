@@ -53,8 +53,9 @@ Argument (optional):
 
 Edit `train.py` to customize:
 - `LATENT_DIM`: Size of random noise vector (default: 100)
-- `LR`: Learning rate for both networks (default: 0.0005)
-- `EPOCHS`: Number of training epochs (default: 20)
+- `LR_G`: Learning rate for the generator (default: 0.0002)
+- `LR_D`: Learning rate for the discriminator (default: 0.0004)
+- `EPOCHS`: Number of training epochs (default: 40)
 - `BATCH_SIZE`: Batch size for training (default: 128)
 
 ## How GANs Work
@@ -78,7 +79,7 @@ Edit `train.py` to customize:
 
 **Poor quality images:**
 - Train for more epochs
-- Adjust learning rate
+- Adjust learning rates
 - Try different random seeds
 
 ## References
